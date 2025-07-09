@@ -321,5 +321,10 @@ namespace BloodAnimations
             Speed = 0f;
             rotationRate = 0f;
         }
+
+        public Vector3 GetPosition()
+        {
+            return baseData.position.worldPosition;
+        }
     }
 }

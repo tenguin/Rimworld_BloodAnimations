@@ -29,7 +29,7 @@ namespace BloodAnimations
                     {
                         if (___burstShotsLeft == 0)
                         {
-                            ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingCharge, exactRotation);
+                            ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingCharge, exactRotation);
                             filthDef = ParticleDefOf.Filth_BulletCasingsCharge;
                         }
                         else
@@ -37,12 +37,12 @@ namespace BloodAnimations
                     }
                     else if (__instance.GetProjectile().projectile.damageDef == DamageDefOf.Bullet && __instance.CasterPawn.equipment.Primary.def.defName.Contains("Shotgun", StringComparison.OrdinalIgnoreCase))
                     {
-                        ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingShotgun, exactRotation);
+                        ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingShotgun, exactRotation);
                         filthDef = ParticleDefOf.Filth_BulletCasingsShotgun;
                     }
                     else if (__instance.GetProjectile().projectile.damageDef == DamageDefOf.Bullet)
                     {
-                        ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingRifle, exactRotation);
+                        ThrowCasing(__instance.CasterPawn, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingRifle, exactRotation);
                         filthDef = ParticleDefOf.Filth_BulletCasingsRifle;
                     }
 
@@ -62,7 +62,7 @@ namespace BloodAnimations
                     {
                         if (___burstShotsLeft == 0)
                         {
-                            ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingCharge);
+                            ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingCharge);
                             filthDef = ParticleDefOf.Filth_BulletCasingsCharge;
                         }
                         else
@@ -70,12 +70,12 @@ namespace BloodAnimations
                     }
                     else if (__instance.GetProjectile().projectile.damageDef == DamageDefOf.Bullet && __instance.Caster.def.building.turretGunDef.defName.Contains("Shotgun", StringComparison.OrdinalIgnoreCase))
                     {
-                        ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingShotgun);
+                        ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingShotgun);
                         filthDef = ParticleDefOf.Filth_BulletCasingsShotgun;
                     }
                     else if (__instance.GetProjectile().projectile.damageDef == DamageDefOf.Bullet)
                     {
-                        ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f), ParticleDefOf.Fuu_BulletCasingRifle);
+                        ThrowCasingTurret(__instance.Caster, __instance.Caster.Map, __instance.GetProjectile().projectile.GetDamageAmount(1f, null), ParticleDefOf.Fuu_BulletCasingRifle);
                         filthDef = ParticleDefOf.Filth_BulletCasingsRifle;
                     }
 

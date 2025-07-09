@@ -16,7 +16,7 @@ namespace BloodAnimations
 
         Vector3 vector = new Vector3(0f, 0f, 0f);
 
-        protected override Vector3 NextExactPosition(float deltaTime)
+        public override Vector3 NextExactPosition(float deltaTime)
         {
             vector.x = facing * horizontal * speedMultiplier;
             vector.z = vertical * speedMultiplier;

@@ -44,7 +44,7 @@ namespace BloodAnimations
             {
                 if (gene.Active)
                 {
-                    VanillaGenesExpanded.GeneExtension modExtension = gene.def.GetModExtension<VanillaGenesExpanded.GeneExtension>();
+                    VEF.Genes.GeneExtension modExtension = gene.def.GetModExtension<VEF.Genes.GeneExtension>();
                     if (modExtension?.customBloodThingDef != null)
                         return modExtension.customBloodThingDef;
                 }
